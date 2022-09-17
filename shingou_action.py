@@ -1,4 +1,5 @@
 from enum import Enum
+import sys
 class Shingou(Enum):
     RED = 1
     BLUE = 2
@@ -10,5 +11,8 @@ def act_shingou(color):
     elif shingou is Shingou.BLUE:
         print ("すすめ")
     elif shingou is Shingou.YELLOW:
-        print(ちゅうい")
-    else shngou
+        print("ちゅうい")
+    
+if __name__ == "__main__":
+    args = sys.argv
+    act_shingou(int(args[1]))
